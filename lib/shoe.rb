@@ -1,4 +1,4 @@
-require 'pry'
+
 
 class Shoe
   attr_accessor :color, :size, :material, :condition
@@ -14,7 +14,6 @@ class Shoe
   end
 
   def brand
-    binding.pry
     if BRANDS.include?(@brand) == false
       BRANDS << @brand
     end
